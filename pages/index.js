@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useRouter } from 'next/navigation'
-
 import styles from '@/styles/home.module.css'
 import { useState } from 'react';
+
 
 export default function Home() {
   const router = useRouter()
@@ -21,7 +21,7 @@ export default function Home() {
   }
   return (
     <div className={styles.homeContainer}>
-        <h1>Google Meet Clone</h1>
+        <h1>DevSync</h1>
         <div className={styles.enterRoom}>
           <input placeholder='Enter Room ID' value={roomId} onChange={(e) => setRoomId(e?.target?.value)}/>
           <button onClick={joinRoom}>Join Room</button>
